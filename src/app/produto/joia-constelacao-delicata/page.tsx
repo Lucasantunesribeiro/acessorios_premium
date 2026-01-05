@@ -1,0 +1,8 @@
+import ProdutoPage, { generateMetadata as generateProductMetadata } from "../[slug]/page";
+
+export const generateMetadata = () =>
+  generateProductMetadata({ params: { slug: "joia-constelacao-delicata" } });
+
+export default function Page() {
+  return <ProdutoPage params={{ slug: "joia-constelacao-delicata" }} />;
+}
